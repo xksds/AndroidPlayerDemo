@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidPlayerDemo.iml" filepath="$PROJECT_DIR$/AndroidPlayerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EFPlayerDemo/EFPlayerDemo.iml" filepath="$PROJECT_DIR$/EFPlayerDemo/EFPlayerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EFPlayerSDK/EFPlayerSDK.iml" filepath="$PROJECT_DIR$/EFPlayerSDK/EFPlayerSDK.iml" />
+    </modules>
+  </component>
+</project>

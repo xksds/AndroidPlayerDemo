@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/play_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF0000"
+        android:text="http://image.kaolafm.net/mz/mp3_32/201710/7e55ba6e-a1a8-44a9-aaf2-6068de51fccb.mp3" />
+
+    <LinearLayout
+        android:id="@+id/gl_buttonPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/play_link"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/start_play"
+            android:text="Start"
+            android:textAllCaps="false"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/pause_play"
+            android:text="Pause"
+            android:textAllCaps="false"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/stop_play"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/restart_play"
+            android:textAllCaps="false"
+            android:text="RePlay"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gl_buttonPanel"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/played_view"
+            android:layout_toLeftOf="@+id/duration_view"
+            android:maxHeight="6dp"
+            android:minHeight="6dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="3dp" />
+
+        <TextView
+            android:id="@+id/played_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:padding="6dp"
+            android:text="0"
+            android:textColor="#16BC5C"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/duration_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            android:padding="6dp"
+            android:text="0:0"
+            android:textColor="#16BC5C"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/file_select"
+        android:layout_below="@id/progress_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:text="ChooseFile"/>
+
+    <Button
+        android:id="@+id/url_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/uri_text"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/file_select"
+        android:layout_toRightOf="@+id/file_select"
+        android:textAllCaps="false"
+        android:text="ChooseUrl" />
+
+
+    <ListView
+        android:id="@+id/uri_text"
+        android:layout_below="@+id/file_select"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+</RelativeLayout>
